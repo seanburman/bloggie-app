@@ -5,6 +5,10 @@
     height: 100vh
 }
 
+.mdl-card {
+    border-radius: 6px!important;
+}
+
 .signin-logo-wrapper {
     position: absolute;
     display: flex;
