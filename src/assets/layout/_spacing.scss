@@ -1,0 +1,55 @@
+@use './media' as *;
+
+// PADDING
+
+@mixin padding($t: 0, $r: 0, $b: 0, $l: 0) {
+    padding: $t $r $b $l;
+}
+
+// MARGINS
+
+@mixin margin($t: 0, $r: 0, $b: 0, $l: 0) {
+    margin: $t $r $b $l;
+}
+
+.space-hz-xs {
+    @include
+     margin($r: 0.25em, $l: 0.25em)
+}
+.space-hz-sm {
+    @include margin($r: 0.5em, $l: 0.5em)
+}
+
+.space-hz-md {
+    @include margin($r: 1em, $l: 1em)
+}
+.space-hz-lg {
+    @include margin($r: 2em, $l: 2em)
+}
+
+.space-v-sm {
+    @include margin($t: 0.5em, $b: 0.5em)
+}
+.space-v-md {
+    @include margin($t: 1em, $b: 1em)
+}
+.space-v-b-md {
+    @include margin($b: 1em)
+}
+.space-v-lg {
+    @include margin($t: 2em, $b: 2em)
+}
+.space-v-b-lg {
+    @include margin($b: 2em)
+}
+
+.__blogIntro {
+    padding: 0 1em 0 2em;
+    
+    @include respond(tablet) {
+        padding: 0 1em 0 2em;
+    }
+    @include respond(phone) {
+        padding: 1em 0;
+    }
+}

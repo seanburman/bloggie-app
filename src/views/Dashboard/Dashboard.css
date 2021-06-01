@@ -1,0 +1,148 @@
+@media screen and (max-width: 60em) {
+    .top-wrapper > button.user-info {
+        margin: 0 1em 1em 0;
+    }
+    .grid-container-dashboard > .nav-drawer-open {
+        height: 22em;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    .grid-container-dashboard >.nav-drawer-closed {
+        height: 2.5em;
+        transition: 500ms;
+    }
+    .grid-container-nav > .dashboard-logo-toggle-wrapper > i {
+        visibility: visible;
+    }
+    .dashboard-logo-toggle-wrapper {
+        cursor: pointer;
+    }
+    .nav-drawer-open > .dashboard-nav-button-wrapper > {
+        height: 100%;
+        overflow: hidden;
+        transition: 500ms;
+        font-size: 1em;
+    }
+    .nav-drawer-open > .dashboard-nav-button-wrapper > button {
+        font-size: 1em;
+    }
+    .nav-drawer-open > .dashboard-nav-button-wrapper > a > button {
+        font-size: 1em;
+    }
+    .nav-drawer-closed > .dashboard-nav-button-wrapper {
+        height: 0%;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    .nav-drawer-open > .social-media-wrapper {
+        height: 1.75em;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    .nav-drawer-closed > .social-media-wrapper {
+        height: 0;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    
+}
+
+.dashboard-shadow {
+    box-shadow:
+    0 -5px 5.9px rgba(0, 0, 0, 0.035),
+    0 -5px 19.7px rgba(0, 0, 0, 0.021),
+    0 -5px 88px rgba(0, 0, 0, 0.014)
+    ;
+}
+
+.dashboard-logo-toggle-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle-arrow {
+    visibility: hidden;
+}
+
+.dashboard-logo {
+    height: 2.5em;
+}
+
+.nav-toggle-arrow {
+    position: absolute;
+    right: 1em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.dashboard-nav-button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-nav-button {
+    border: 0px;
+    padding: 1em;
+    background-color: transparent;
+    color: white;
+    transition: 250ms;
+    text-align: left;
+    padding-left: 2em;
+    width: 100%;
+}
+
+.dashboard-nav-button:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow:
+    0 0px 0.4px rgba(0, 0, 0, 0.026),
+    0 0px 1.1px rgba(0, 0, 0, 0.037),
+    0 0px 2px rgba(0, 0, 0, 0.046),
+    0 0px 3.6px rgba(0, 0, 0, 0.055),
+    0 0px 6.7px rgba(0, 0, 0, 0.066),
+    0 0px 16px rgba(0, 0, 0, 0.09)
+    ;
+    transition: 250ms;
+}
+
+.dashboard-nav-button > i {
+    margin-right: 1em;
+}
+
+.nav-button-selected {
+    background-color: rgb(253, 102, 99)
+}
+
+div.social-media-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.25em;
+    color: white;
+}
+
+div.top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border-radius: 6px;
+    width: 100%;
+}
+
+button.user-info {
+    width: 10em;
+    height: 3em;
+    border: 0px;
+    border-radius: 6px;
+    margin: 1em 2.5em 0 0;
+    background-color: white;
+    box-shadow:
+    0 0px 2px rgba(0, 0, 0, 0.02),
+    0 0px 16px rgba(0, 0, 0, 0.04)
+    ;
+}

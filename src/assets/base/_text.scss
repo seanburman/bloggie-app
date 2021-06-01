@@ -1,0 +1,47 @@
+@use '../theme' as *;
+@use '../layout/' as *;
+@use 'fonts' as *;
+
+a {
+    text-decoration: none;
+    color: unset;
+    @include SansSerif();
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+    color: $black;
+    font-size: 1em;
+    @include SansSerif();
+    &__center {
+        text-align: center;
+    }
+}
+
+pre {
+    @include SansSerif();
+    font-size: 1em;
+}
+
+h1, h2 {
+    @include Serif();
+}
+h1 {
+    font-size: 2.5em;
+    color: $black;
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 1em 0
+}
+
+button {
+    @include SansSerif();
+}
+
+.text__center {
+    text-align: center;
+}

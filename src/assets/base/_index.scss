@@ -1,0 +1,8 @@
+@forward 'fonts';
+@forward 'text';
+@use '../theme' as *;
+
+body {
+    margin: 0;
+    background: $light-blue;
+}

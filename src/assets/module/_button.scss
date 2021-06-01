@@ -1,0 +1,82 @@
+@use '../theme' as *;
+@use '../layout' as *;
+@use './abstracts/variables' as *;
+
+
+button {
+    border: 0px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 250ms;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: unset;
+}
+
+button:disabled:hover {
+    opacity: 0.7;
+    cursor: unset;
+}
+
+.button {
+    &__tabs {
+        @include respond(phone) {
+            font-size: 0.75em;
+            width: 10em;
+            margin: 0 0.1em;
+        }
+    }
+
+    &__close {
+        border: 0px;
+        padding: 0;
+        background: transparent;
+        color: $red;
+        font-size: 2em;
+        transition: 250ms;
+        &:hover {
+            opacity: 0.5;
+            transition: 250ms;
+        }
+    }
+
+    &__ghost {
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+.button__sm{
+    @include padding(0.5em, 1em, 0.5em, 1em);
+    border-radius: $radius-md;
+    width: 4.75em;
+}
+
+.button__md {
+    @include padding(0.5em, 1em, 0.5em, 1em);
+    border-radius: $radius-md;
+    width: 10em;
+}
+
+.button__lg {
+    @include padding(1em, 1.5em, 1em, 1.5em);
+    border-radius: $radius-lg;
+    width: 10em;
+}
+
+.button__red {
+    background: $red;
+    color: $white;
+    box-shadow: $light-shadow;
+}
+.button__white {
+    background: $white;
+    color: $black; 
+    box-shadow: $light-shadow;
+}

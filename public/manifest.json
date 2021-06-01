@@ -1,0 +1,25 @@
+{
+  "short_name": "Bloggie App",
+  "name": "",
+  "icons": [
+    {
+      "src": "/img/favicon.png",
+      "sizes": "40x40",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/favicon.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "/img/favicon.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

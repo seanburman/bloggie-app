@@ -1,0 +1,59 @@
+@use './media' as *;
+
+@mixin flex($d: row, $j: flex-start, $a: flex-start, $w: unset) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+    width: $w;
+}
+
+
+.flex {
+    @include flex();
+    @include respond(phone) {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-center {
+    @include flex($j: center, $w: 100%);
+
+    &__column {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__intro-wrap {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        @include respond(phone) {
+            width: 100%;
+            justify-content: center;
+        }
+            img {
+                max-height: 30em;
+            }
+    }
+}
+
+.flex-col {
+    @include flex($d: column, $w: 100%);
+
+    &__dashboard-content {
+        @include flex($d: column, $w: auto);
+        padding: 0 2em;
+        @include respond(tablet) {
+            padding: 0 1em;
+        }
+        @include respond(phone) {
+            padding: 0 0.5em;
+        }
+    }
+}
+
+.flex-end {
+    @include flex($j: flex-end, $w: 100%);
+}

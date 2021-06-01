@@ -1,0 +1,51 @@
+@use 'media';
+
+
+.grid {
+    display: grid;
+    &__blogIntro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include media.respond(phone) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__map {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2em;
+        column-gap: 1em;
+
+        @include media.respond(65em) {
+            grid-template-columns: 1fr 1fr
+        }
+
+        .double1 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        .double2 {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        
+        .triple1 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        .triple2 {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .triple3 {
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+        
+    }
+
+}
+
+
+
+

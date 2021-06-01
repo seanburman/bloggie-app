@@ -1,0 +1,62 @@
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(-2em)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em)
+    }
+}
+
+.slide-in {
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+.rotate0 {
+    transform: rotate(0deg);
+    transition: 500ms;
+}
+
+.hover-bounce {
+    transition: 250ms;
+}
+
+.hover-bounce:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 250ms;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

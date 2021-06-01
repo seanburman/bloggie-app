@@ -1,0 +1,515 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: unset;
+}
+@media (max-width: 40em) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: phone) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.flex-center__column {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-center__intro-wrap {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+}
+@media (max-width: 40em) {
+  .flex-center__intro-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: phone) {
+  .flex-center__intro-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.flex-center__intro-wrap img {
+  max-height: 30em;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.flex-col__dashboard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  padding: 0 2em;
+}
+@media (max-width: 60em) {
+  .flex-col__dashboard-content {
+    padding: 0 1em;
+  }
+}
+@media (max-width: 40em) {
+  .flex-col__dashboard-content {
+    padding: 0 0.5em;
+  }
+}
+@media (max-width: phone) {
+  .flex-col__dashboard-content {
+    padding: 0 0.5em;
+  }
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+.grid__blogIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 40em) {
+  .grid__blogIntro {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: phone) {
+  .grid__blogIntro {
+    grid-template-columns: 1fr;
+  }
+}
+.grid__map {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2em;
+  column-gap: 1em;
+}
+@media (max-width: 65em) {
+  .grid__map {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.grid__map .double1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.grid__map .double2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.grid__map .triple1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.grid__map .triple2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.grid__map .triple3 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.space-hz-xs {
+  margin: 0 0.25em 0 0.25em;
+}
+
+.space-hz-sm {
+  margin: 0 0.5em 0 0.5em;
+}
+
+.space-hz-md {
+  margin: 0 1em 0 1em;
+}
+
+.space-hz-lg {
+  margin: 0 2em 0 2em;
+}
+
+.space-v-sm {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.space-v-md {
+  margin: 1em 0 1em 0;
+}
+
+.space-v-b-md {
+  margin: 0 0 1em 0;
+}
+
+.space-v-lg {
+  margin: 2em 0 2em 0;
+}
+
+.space-v-b-lg {
+  margin: 0 0 2em 0;
+}
+
+.__blogIntro {
+  padding: 0 1em 0 2em;
+}
+@media (max-width: 60em) {
+  .__blogIntro {
+    padding: 0 1em 0 2em;
+  }
+}
+@media (max-width: 40em) {
+  .__blogIntro {
+    padding: 1em 0;
+  }
+}
+@media (max-width: phone) {
+  .__blogIntro {
+    padding: 1em 0;
+  }
+}
+
+.w100 {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #383838;
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+}
+p__center {
+  text-align: center;
+}
+
+pre {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+}
+
+h1, h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #383838;
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 1em 0;
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+}
+
+.text__center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background: #e9f4ff;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0em);
+  }
+}
+.slide-in {
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+  transition: 500ms;
+}
+
+.rotate0 {
+  transform: rotate(0deg);
+  transition: 500ms;
+}
+
+.hover-bounce {
+  transition: 250ms;
+}
+
+.hover-bounce:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 250ms;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+button {
+  border: 0px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 250ms;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: unset;
+}
+
+button:disabled:hover {
+  opacity: 0.7;
+  cursor: unset;
+}
+
+@media (max-width: 40em) {
+  .button__tabs {
+    font-size: 0.75em;
+    width: 10em;
+    margin: 0 0.1em;
+  }
+}
+@media (max-width: phone) {
+  .button__tabs {
+    font-size: 0.75em;
+    width: 10em;
+    margin: 0 0.1em;
+  }
+}
+.button__close {
+  border: 0px;
+  padding: 0;
+  background: transparent;
+  color: #ff3f46;
+  font-size: 2em;
+  transition: 250ms;
+}
+.button__close:hover {
+  opacity: 0.5;
+  transition: 250ms;
+}
+.button__ghost {
+  padding: 0;
+  background-color: transparent;
+}
+
+.button__sm {
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 4px;
+  width: 4.75em;
+}
+
+.button__md {
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 4px;
+  width: 10em;
+}
+
+.button__lg {
+  padding: 1em 1.5em 1em 1.5em;
+  border-radius: 12px;
+  width: 10em;
+}
+
+.button__red {
+  background: #ff3f46;
+  color: white;
+  box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.014), 0 0px 5.3px rgba(0, 0, 0, 0.02), 0 0px 10px rgba(0, 0, 0, 0.025), 0 0px 17.9px rgba(0, 0, 0, 0.03), 0 0px 33.4px rgba(0, 0, 0, 0.036), 0 0px 80px rgba(0, 0, 0, 0.05);
+}
+
+.button__white {
+  background: white;
+  color: #383838;
+  box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.014), 0 0px 5.3px rgba(0, 0, 0, 0.02), 0 0px 10px rgba(0, 0, 0, 0.025), 0 0px 17.9px rgba(0, 0, 0, 0.03), 0 0px 33.4px rgba(0, 0, 0, 0.036), 0 0px 80px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: unset;
+  max-width: 100%;
+  padding: 0.5em;
+  background: white;
+}
+
+.card * {
+  max-width: 100%;
+}
+
+.card-photo {
+  padding: 0.5em;
+}
+.card-photo__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card-photo__title {
+  padding: 0.5em 0;
+  font-weight: bold;
+}
+.card-photo__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 2em;
+  background-color: white;
+  padding: 0.25em 2em;
+  border-radius: 1.25em;
+}
+
+.search-bar {
+  border-style: none;
+  outline: none;
+  height: 100%;
+  width: 80%;
+  font-size: 1em;
+}
+
+.icon-wrapper {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 400;
+}
+
+.modal__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.modal__message .content__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+  width: 20em;
+  height: 10em;
+  border-radius: 12px;
+}
+.modal__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.9);
+}
+.modal__image .button__close {
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+}
+@media (max-width: 40em) {
+  .modal__image .button__close {
+    top: 0.5em;
+    right: 0.5em;
+  }
+}
+@media (max-width: phone) {
+  .modal__image .button__close {
+    top: 0.5em;
+    right: 0.5em;
+  }
+}
+.modal__image .content img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
