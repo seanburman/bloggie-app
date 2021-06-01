@@ -43,6 +43,14 @@ export default function PostForm({editPost}){
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if(title === "") {
+            createModal('message', 'Your post needs a title!', '#')
+            return
+        }
+        if(content === "") {
+            createModal('message', 'Your post needs some content!', '#')
+            return
+        }
         if(editPost) {
             updatePost(params.id, newPost)
             clearSelectedPost()

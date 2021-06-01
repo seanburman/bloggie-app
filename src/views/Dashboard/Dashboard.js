@@ -81,7 +81,7 @@ export default function Dashboard() {
 
          </div>
          <div className="social-media-wrapper">
-            <a href="https://www.github.com/seanburman" target="blank">
+            <a href="https://www.github.com/seanburman/bloggie-app" target="blank">
                 <i className="fab fa-github" />
             </a>
          </div>

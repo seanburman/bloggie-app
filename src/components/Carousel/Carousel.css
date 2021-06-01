@@ -1,6 +1,6 @@
 .carousel-wrapper {
     display: flex;
-    width: 30em;
+    width: 100%;
     max-width: 90vw;
 }
 
@@ -50,6 +50,15 @@
     padding: 1em 0 2em 0;
 }
 
-.carousel-image-preview {
+@media screen and (max-width: 40em) {
+    img.carousel-image-preview {
+        max-height: 15em!important;
+    }
+
+}
+img.carousel-image-preview {
+    max-width: 100%;
+    max-height: 20em;
     height: 20em;
+    width: auto
 }
