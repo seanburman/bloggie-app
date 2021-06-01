@@ -30,7 +30,7 @@ export default function PostForm({editPost}){
         if(params.id) {
             getPostByID(params.id)
         }
-    },[])
+    },[params.id])
 
     useEffect(() => {
         if(params.id && selectedPost) {
@@ -39,7 +39,7 @@ export default function PostForm({editPost}){
             setTitle(sp.title)
             setContent(sp.content)
         }
-    },[selectedPost])
+    },[selectedPost, params.id])
 
     const handleSubmit = (e) => {
         e.preventDefault()
